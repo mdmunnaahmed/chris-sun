@@ -1,0 +1,257 @@
+/* local fonts link */
+@font-face {
+  font-family: "Visby";
+  src: url("./fonts/VisbyRegular.woff");
+}
+@font-face {
+  font-family: "Visby Medium";
+  src: url("./fonts/VisbyMedium.woff");
+}
+@font-face {
+  font-family: "Visby Bold";
+  src: url("./fonts/VisbyHeavy.woff");
+}
+/* local fonts link */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+label,
+img,
+span {
+  display: inline-block;
+  line-height: 1;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Visby", sans-serif;
+  color: white;
+  line-height: 1.3;
+}
+
+/* main wrapper css */
+.main-wrapper {
+  min-height: 100dvh;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-logo {
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+
+.main-logo {
+  margin-inline: auto;
+}
+.main-logo img {
+  max-width: 266px;
+}
+
+.footer-logo {
+  margin-top: 24px;
+}
+
+.main-wrapper-inner {
+  padding: 40px 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.left-content {
+  max-width: 650px;
+  width: 100%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 60px;
+  text-align: center;
+  line-height: 1;
+  color: white;
+}
+.main-title span {
+  color: #e3000f;
+}
+
+.main-subtitle {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+/* main wrapper css */
+/* form related css */
+form {
+  max-width: 500px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+  margin-inline-start: 20px;
+  text-align: left;
+}
+
+.form-group {
+  position: relative;
+}
+
+#fileupload {
+  margin-bottom: 0;
+  line-height: 44px;
+}
+#fileupload::-webkit-file-upload-button {
+  display: none;
+}
+#fileupload::-moz-file-upload-button {
+  display: none;
+}
+
+.for-fileupload {
+  background-color: #054089;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 12px;
+  border-radius: 6px;
+}
+
+.form-control {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #054089;
+  background: #f9f9f9;
+  outline: none !important;
+  box-shadow: none !important;
+  padding-inline: 30px;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  border-color: #054089;
+}
+
+/* For Chrome, Safari, and Opera */
+.form-control::-webkit-input-placeholder {
+  color: #054089;
+}
+
+/* For Firefox */
+.form-control::-moz-placeholder {
+  color: #054089;
+}
+
+/* For Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+  color: #054089;
+}
+
+/* For Edge */
+.form-control::-ms-input-placeholder {
+  color: #054089;
+}
+
+/* For modern browsers */
+.form-control::-moz-placeholder {
+  color: #054089;
+}
+.form-control::placeholder {
+  color: #054089;
+}
+
+.button {
+  height: 50px;
+  background-color: #054089;
+  font-family: "Visby Bold", sans-serif;
+  border-radius: 6px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 12px;
+  transition: all 0.3s linear;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 32px;
+}
+
+.button:hover {
+  background-color: #073975;
+}
+
+.custom-radio-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.custom-radio {
+  position: relative;
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+}
+
+.custom-radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-radio label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white; /* Outer blue color */
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%; /* Adjust inner circle size */
+  height: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #fff; /* Middle white color */
+}
+
+.custom-radio input[type=radio]:checked + label::after {
+  background: #ef4444; /* Inner red color when checked */
+  width: 50%; /* Adjust checked state inner size */
+  height: 50%;
+}
+
+/* form related css */
