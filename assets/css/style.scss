@@ -91,7 +91,7 @@ body {
   }
 }
 .big-sticker {
-  padding-left: 50px;
+  // padding-left: 50px;
   transform: scale(0);
   animation: zoomIn 1s linear forwards;
   animation-delay: 0.2s;
@@ -111,7 +111,7 @@ body {
   opacity: 0;
   margin-top: 60px;
   animation: fadeIn 1s linear forwards;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 @keyframes bordTwo {
   100% {
@@ -126,6 +126,7 @@ body {
   animation: bordTwo 1.5s linear forwards;
   animation-delay: 0.3s;
 }
+
 .bord3 {
   position: absolute;
   top: 28%;
@@ -134,6 +135,7 @@ body {
   animation: bordTwo 1.5s linear forwards;
   animation-delay: 0.9s;
 }
+
 .bord4 {
   position: absolute;
   top: 28%;
@@ -311,3 +313,60 @@ form {
 }
 
 /* form related css */
+
+/* responsive start */
+@media (max-width: 1600px) {
+  .left-plate,
+  .bord2,
+  .bord3,
+  .bord4 {
+    max-width: 420px;
+    top: 30%;
+  }
+
+  .glass {
+    max-width: 300px;
+  }
+  .big-sticker {
+    max-width: 220px;
+  }
+  .small-sticker {
+    max-width: 180px;
+  }
+  .main-logo img {
+    max-width: 220px;
+  }
+  .main-title {
+    font-size: 56px;
+  }
+}
+@media (max-width: 1440px) {
+  .left-content {
+    margin-left: 6%;
+    max-width: 570px;
+  }
+  .left-plate,
+  .bord2,
+  .bord3,
+  .bord4 {
+    max-width: 370px;
+    top: 30%;
+  }
+
+  .glass {
+    max-width: 300px;
+  }
+  .big-sticker {
+    max-width: 220px;
+  }
+  .small-sticker {
+    max-width: 180px;
+  }
+  .main-logo img {
+    max-width: 220px;
+  }
+  .main-title {
+    font-size: 48px;
+  }
+}
+/* responsive end */
