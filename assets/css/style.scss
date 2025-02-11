@@ -277,11 +277,13 @@ form {
   position: relative;
   width: 30px; /* Adjust size as needed */
   height: 30px;
+  flex-shrink: 0;
 }
 
 .custom-radio input[type="radio"] {
   position: absolute;
   opacity: 0;
+  flex-shrink: 0;
 }
 
 .custom-radio label {
@@ -292,6 +294,7 @@ form {
   background: white; /* Outer blue color */
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .custom-radio label::after {
@@ -367,6 +370,105 @@ form {
   }
   .main-title {
     font-size: 48px;
+  }
+}
+
+.mobile-thumb {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .left-content {
+    margin: auto;
+    max-width: 650px;
+  }
+  .right-content {
+    display: none;
+  }
+  .mobile-thumb {
+    display: block;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .left-plate,
+  .bord2,
+  .bord3,
+  .bord4 {
+    display: none;
+  }
+
+  .glass {
+    max-width: 300px;
+  }
+  .big-sticker {
+    max-width: 220px;
+  }
+  .small-sticker {
+    max-width: 180px;
+  }
+  .main-logo img {
+    max-width: 220px;
+  }
+  .main-title {
+    font-size: 48px;
+  }
+  .main-subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-wrapper-inner {
+    padding: 20px 24px;
+  }
+  .left-content {
+    margin: auto;
+    max-width: 650px;
+  }
+  .right-content {
+    display: none;
+  }
+  .mobile-thumb {
+    display: block;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .left-plate,
+  .bord2,
+  .bord3,
+  .bord4 {
+    display: none;
+  }
+
+  .glass {
+    max-width: 300px;
+  }
+  .big-sticker {
+    max-width: 220px;
+  }
+  .small-sticker {
+    max-width: 180px;
+  }
+  .main-logo img {
+    max-width: 160px;
+  }
+  .main-title {
+    font-size: 38px;
+  }
+  .main-subtitle {
+    font-size: 20px;
+  }
+  .top-logo {
+    max-width: 90px;
+    top: 30px;
+  }
+  .footer-logo {
+    max-width: 230px;
+  }
+  .form-control {
+    font-size: 18px;
+    padding-inline: 16px;
   }
 }
 /* responsive end */
