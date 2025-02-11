@@ -42,6 +42,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+}
+
+@keyframes bordOne {
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+}
+.left-plate {
+  position: absolute;
+  left: -18%;
+  top: 28%;
+  transform: translateX(-100%);
+  animation: bordOne 1s forwards;
+  animation-delay: 0.5s;
 }
 
 .top-logo {
@@ -64,7 +79,6 @@ body {
 .main-wrapper-inner {
   padding: 40px 96px;
   display: flex;
-  justify-content: space-between;
   gap: 12px;
 }
 
@@ -73,6 +87,74 @@ body {
   width: 100%;
   margin-left: 10%;
   text-align: center;
+}
+
+.right-content {
+  max-width: 600px;
+  padding-top: 220px;
+}
+
+@keyframes zoomIn {
+  100% {
+    transform: scale(1);
+  }
+}
+.big-sticker {
+  padding-left: 50px;
+  transform: scale(0);
+  animation: zoomIn 1s linear forwards;
+  animation-delay: 0.2s;
+}
+
+.small-sticker {
+  transform: scale(0);
+  animation: zoomIn 1s linear forwards;
+  animation-delay: 0.6s;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+.glass {
+  opacity: 0;
+  margin-top: 60px;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes bordTwo {
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+}
+.bord2 {
+  position: absolute;
+  top: 28%;
+  right: 10%;
+  transform: translateX(200%);
+  animation: bordTwo 1.5s linear forwards;
+  animation-delay: 0.3s;
+}
+
+.bord3 {
+  position: absolute;
+  top: 28%;
+  right: 0;
+  transform: translateX(200%);
+  animation: bordTwo 1.5s linear forwards;
+  animation-delay: 0.9s;
+}
+
+.bord4 {
+  position: absolute;
+  top: 28%;
+  right: -10%;
+  transform: translateX(200%);
+  animation: bordTwo 1.5s linear forwards;
+  animation-delay: 1.5s;
 }
 
 .main-title {
