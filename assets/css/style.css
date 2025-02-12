@@ -69,15 +69,15 @@ body {
   margin-inline: auto;
 }
 .main-logo img {
-  max-width: 266px;
+  max-width: 206px;
 }
 
 .footer-logo {
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .main-wrapper-inner {
-  padding: 40px 96px;
+  padding: 20px 96px;
   display: flex;
   gap: 12px;
 }
@@ -103,6 +103,7 @@ body {
   transform: scale(0);
   animation: zoomIn 1s linear forwards;
   animation-delay: 0.2s;
+  padding-left: 20px;
 }
 
 .small-sticker {
@@ -119,9 +120,10 @@ body {
 }
 .glass {
   opacity: 0;
-  margin-top: 60px;
+  margin-top: 40px;
   animation: fadeIn 1s linear forwards;
   animation-delay: 0.5s;
+  max-width: 325px;
 }
 
 @keyframes bordTwo {
@@ -132,10 +134,11 @@ body {
 .bord2 {
   position: absolute;
   top: 28%;
-  right: 10%;
+  right: 15%;
   transform: translateX(200%);
   animation: bordTwo 1.5s linear forwards;
   animation-delay: 0.3s;
+  max-width: 500px;
 }
 
 .bord3 {
@@ -145,6 +148,7 @@ body {
   transform: translateX(200%);
   animation: bordTwo 1.5s linear forwards;
   animation-delay: 0.9s;
+  max-width: 500px;
 }
 
 .bord4 {
@@ -154,10 +158,11 @@ body {
   transform: translateX(200%);
   animation: bordTwo 1.5s linear forwards;
   animation-delay: 1.5s;
+  max-width: 500px;
 }
 
 .main-title {
-  font-size: 60px;
+  font-size: 52px;
   text-align: center;
   line-height: 1;
   color: white;
@@ -167,7 +172,7 @@ body {
 }
 
 .main-subtitle {
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -221,10 +226,10 @@ form {
 
 .form-control {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   width: 100%;
-  height: 48px;
+  height: 46px;
   border-radius: 10px;
   border: 1px solid white;
   color: #054089;
@@ -293,7 +298,7 @@ form {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .custom-radio {
@@ -341,6 +346,12 @@ form {
 /* form related css */
 /* responsive start */
 @media (max-width: 1600px) {
+  .main-wrapper-inner {
+    padding-block: 10px;
+  }
+  .bord2 {
+    right: 10%;
+  }
   .left-plate,
   .bord2,
   .bord3,
@@ -353,21 +364,41 @@ form {
   }
   .big-sticker {
     max-width: 220px;
+    padding-left: 0;
   }
   .small-sticker {
     max-width: 180px;
   }
   .main-logo img {
-    max-width: 220px;
+    max-width: 160px;
   }
   .main-title {
-    font-size: 56px;
+    font-size: 48px;
+  }
+  .main-subtitle {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .form-title {
+    font-size: 18px;
+  }
+  .form-title br {
+    display: none;
+  }
+  .footer-logo {
+    max-width: 230px;
+  }
+  .right-content {
+    padding-top: 160px;
+  }
+  .left-content {
+    max-width: 620px;
   }
 }
 @media (max-width: 1440px) {
   .left-content {
     margin-left: 6%;
-    max-width: 570px;
+    max-width: 450px;
   }
   .left-plate,
   .bord2,
@@ -386,10 +417,19 @@ form {
     max-width: 180px;
   }
   .main-logo img {
-    max-width: 220px;
+    max-width: 160px;
   }
   .main-title {
-    font-size: 48px;
+    font-size: 44px;
+  }
+  .main-subtitle {
+    font-size: 20px;
+  }
+  .top-logo {
+    max-width: 130px;
+  }
+  .form-control {
+    height: 44px;
   }
 }
 .mobile-thumb {
