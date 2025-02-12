@@ -379,7 +379,7 @@ form {
 @media (max-width: 1440px) {
   .left-content {
     margin-left: 6%;
-    max-width: 450px;
+    max-width: 580px;
   }
   .left-plate,
   .bord2,
@@ -412,6 +412,12 @@ form {
   }
   .form-control {
     height: 44px;
+  }
+}
+@media (max-width: 1370px) {
+  .left-content {
+    margin-left: 6%;
+    max-width: 450px;
   }
 }
 
